@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: springstudent
+    password: springstudent
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: /api
+  mail:
+    host: localhost
+    port: 25
+
+
+jwt:
+  algorithm:
+    key: SuperSecureKey
+    issuer: eCommerce
+    expiryInSeconds: 604800
+email:
+  from: no-reply@rinia.com
+app:
+  frontend:
+    url: https://rinia.com/
