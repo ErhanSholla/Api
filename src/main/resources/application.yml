@@ -9,9 +9,6 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
-  data:
-    rest:
-      base-path: /api
   mail:
     host: localhost
     port: 25
